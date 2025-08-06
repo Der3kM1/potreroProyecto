@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Inicio</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <header>
+        <h1>Bienvenido a la Aplicación de Cursos</h1>
+    </header>
+    <main>
+        <section>
+            <h2>Explora nuestros cursos</h2>
+            <p>Descubre una variedad de cursos disponibles para ti.</p>
+            <a href="{{ url_for('courses.courses') }}">Ver Cursos</a>
+        </section>
+    </main>
+</body>
+</html>
